@@ -1,0 +1,149 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "datapoints",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "uint64"
+                },
+                {
+                    "name": "median",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "time_point"
+                }
+            ]
+        },
+        {
+            "name": "feedata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "genfee",
+                    "type": "float32"
+                },
+                {
+                    "name": "collection",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "generation",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accname",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "mint",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accname",
+                    "type": "name"
+                },
+                {
+                    "name": "nftname",
+                    "type": "string"
+                },
+                {
+                    "name": "cid",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "collection",
+                    "type": "name"
+                },
+                {
+                    "name": "genfee",
+                    "type": "float32"
+                }
+            ]
+        },
+        {
+            "name": "tracking",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accname",
+                    "type": "name"
+                },
+                {
+                    "name": "generated",
+                    "type": "uint8"
+                },
+                {
+                    "name": "minted",
+                    "type": "uint8"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "generation",
+            "type": "generation",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mint",
+            "type": "mint",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setfee",
+            "type": "setfee",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "datapoints",
+            "type": "datapoints",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feedata",
+            "type": "feedata",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tracking",
+            "type": "tracking",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
